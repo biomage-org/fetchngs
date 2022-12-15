@@ -44,6 +44,7 @@ export NCBI_SETTINGS="$PWD/!{ncbi_settings}"
 
 retry_with_backoff !{args2} \
     prefetch \
+    --max-size=50000000 \
     !{args} \
     !{id}
 
